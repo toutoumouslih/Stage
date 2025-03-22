@@ -1,0 +1,62 @@
+[
+    {
+        "model": "demographic_data.region",
+        "pk": 1,
+        "fields": {
+            "name": "Nouakchott",
+            "code": "NKC",
+            "capital": "Nouakchott",
+            "population": 1200000,
+            "male_population": 600000,
+            "female_population": 600000,
+            "literacy": 75.5,
+            "employment_rate": 65.0,
+            "average_age": 27.5,
+            "households": 240000,
+            "coordinates": [
+                [
+                    [-15.9785, 18.2367],
+                    [-15.9785, 17.9533],
+                    [-15.8245, 17.9533],
+                    [-15.8245, 18.2367],
+                    [-15.9785, 18.2367]
+                ]
+            ],
+            "historical_1965": 20000,
+            "historical_1977": 134704,
+            "historical_1988": 393325,
+            "historical_2000": 558195,
+            "historical_2013": 958399
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "pk": 2,
+        "fields": {
+            "name": "Trarza",
+            "code": "TRZ",
+            "capital": "Rosso",
+            "population": 272773,
+            "male_population": 135000,
+            "female_population": 137773,
+            "literacy": 65.2,
+            "employment_rate": 58.5,
+            "average_age": 29.8,
+            "households": 54555,
+            "coordinates": [
+                [
+                    [-16.5000, 17.0000],
+                    [-16.5000, 16.0000],
+                    [-15.0000, 16.0000],
+                    [-15.0000, 17.0000],
+                    [-16.5000, 17.0000]
+                ]
+            ],
+            "historical_1965": 150000,
+            "historical_1977": 165000,
+            "historical_1988": 202190,
+            "historical_2000": 225000,
+            "historical_2013": 272773
+        }
+    }
+]

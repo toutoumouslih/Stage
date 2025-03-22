@@ -1,0 +1,302 @@
+[
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Hodh Chargui",
+            "code": "HC",
+            "capital": "Néma",
+            "population": 625643,
+            "male_population": 288388,
+            "female_population": 337255,
+            "coordinates": [
+                [
+                    [-7.2, 16.5],
+                    [-5.5, 16.5],
+                    [-5.5, 15.5],
+                    [-7.2, 15.5],
+                    [-7.2, 16.5]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Hodh El Gharbi",
+            "code": "HG",
+            "capital": "Ayoun el-Atrous",
+            "population": 403091,
+            "male_population": 186877,
+            "female_population": 216214,
+            "coordinates": [
+                [
+                    [-9.0, 16.8],
+                    [-7.2, 16.8],
+                    [-7.2, 15.5],
+                    [-9.0, 15.5],
+                    [-9.0, 16.8]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Assaba",
+            "code": "AS",
+            "capital": "Kiffa",
+            "population": 451804,
+            "male_population": 203189,
+            "female_population": 248615,
+            "coordinates": [
+                [
+                    [-11.0, 17.2],
+                    [-9.0, 17.2],
+                    [-9.0, 15.8],
+                    [-11.0, 15.8],
+                    [-11.0, 17.2]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Gorgol",
+            "code": "GO",
+            "capital": "Kaédi",
+            "population": 442490,
+            "male_population": 210612,
+            "female_population": 231878,
+            "coordinates": [
+                [
+                    [-12.8, 16.8],
+                    [-11.0, 16.8],
+                    [-11.0, 15.5],
+                    [-12.8, 15.5],
+                    [-12.8, 16.8]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Brakna",
+            "code": "BR",
+            "capital": "Aleg",
+            "population": 391310,
+            "male_population": 181163,
+            "female_population": 210147,
+            "coordinates": [
+                [
+                    [-14.0, 17.5],
+                    [-12.8, 17.5],
+                    [-12.8, 16.0],
+                    [-14.0, 16.0],
+                    [-14.0, 17.5]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Trarza",
+            "code": "TR",
+            "capital": "Rosso",
+            "population": 323903,
+            "male_population": 151958,
+            "female_population": 171945,
+            "coordinates": [
+                [
+                    [-16.0, 18.0],
+                    [-14.0, 18.0],
+                    [-14.0, 16.0],
+                    [-16.0, 16.0],
+                    [-16.0, 18.0]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Adrar",
+            "code": "AD",
+            "capital": "Atar",
+            "population": 71623,
+            "male_population": 34710,
+            "female_population": 36913,
+            "coordinates": [
+                [
+                    [-13.0, 21.0],
+                    [-11.0, 21.0],
+                    [-11.0, 19.0],
+                    [-13.0, 19.0],
+                    [-13.0, 21.0]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Dakhlet Nouadhibou",
+            "code": "DN",
+            "capital": "Nouadhibou",
+            "population": 184459,
+            "male_population": 102944,
+            "female_population": 81515,
+            "coordinates": [
+                [
+                    [-17.0, 21.0],
+                    [-16.0, 21.0],
+                    [-16.0, 19.5],
+                    [-17.0, 19.5],
+                    [-17.0, 21.0]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Tagant",
+            "code": "TG",
+            "capital": "Tidjikja",
+            "population": 114760,
+            "male_population": 54264,
+            "female_population": 60496,
+            "coordinates": [
+                [
+                    [-11.5, 19.0],
+                    [-9.5, 19.0],
+                    [-9.5, 17.2],
+                    [-11.5, 17.2],
+                    [-11.5, 19.0]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Guidimakha",
+            "code": "GD",
+            "capital": "Sélibaby",
+            "population": 363075,
+            "male_population": 172362,
+            "female_population": 190713,
+            "coordinates": [
+                [
+                    [-12.5, 16.0],
+                    [-11.0, 16.0],
+                    [-11.0, 15.0],
+                    [-12.5, 15.0],
+                    [-12.5, 16.0]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Tiris Zemmour",
+            "code": "TZ",
+            "capital": "Zouérate",
+            "population": 79129,
+            "male_population": 46899,
+            "female_population": 32230,
+            "coordinates": [
+                [
+                    [-13.0, 25.0],
+                    [-8.0, 25.0],
+                    [-8.0, 21.0],
+                    [-13.0, 21.0],
+                    [-13.0, 25.0]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Inchiri",
+            "code": "IN",
+            "capital": "Akjoujt",
+            "population": 29484,
+            "male_population": 18466,
+            "female_population": 11018,
+            "coordinates": [
+                [
+                    [-15.0, 20.5],
+                    [-13.0, 20.5],
+                    [-13.0, 19.0],
+                    [-15.0, 19.0],
+                    [-15.0, 20.5]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Nouakchott-Ouest",
+            "code": "NO",
+            "capital": "Nouakchott",
+            "population": 204881,
+            "male_population": 105167,
+            "female_population": 99714,
+            "coordinates": [
+                [
+                    [-15.9785, 18.2367],
+                    [-15.9785, 17.9533],
+                    [-15.8245, 17.9533],
+                    [-15.8245, 18.2367],
+                    [-15.9785, 18.2367]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Nouakchott-Nord",
+            "code": "NN",
+            "capital": "Nouakchott",
+            "population": 614465,
+            "male_population": 303315,
+            "female_population": 311150,
+            "coordinates": [
+                [
+                    [-15.8245, 18.2367],
+                    [-15.8245, 17.9533],
+                    [-15.6705, 17.9533],
+                    [-15.6705, 18.2367],
+                    [-15.8245, 18.2367]
+                ]
+            ]
+        }
+    },
+    {
+        "model": "demographic_data.region",
+        "fields": {
+            "name": "Nouakchott-Sud",
+            "code": "NS",
+            "capital": "Nouakchott",
+            "population": 627415,
+            "male_population": 315156,
+            "female_population": 312259,
+            "coordinates": [
+                [
+                    [-15.6705, 18.2367],
+                    [-15.6705, 17.9533],
+                    [-15.5165, 17.9533],
+                    [-15.5165, 18.2367],
+                    [-15.6705, 18.2367]
+                ]
+            ]
+        }
+    }
+]

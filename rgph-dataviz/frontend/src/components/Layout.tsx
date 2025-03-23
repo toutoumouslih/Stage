@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Container, Box, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import MapIcon from '@mui/icons-material/Map';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import TableChartIcon from '@mui/icons-material/TableChart';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import HomeIcon from '@mui/icons-material/Home';
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   background: '#fff',
@@ -20,7 +23,7 @@ const LogoContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-const StyledLink = styled(Link)(({ theme }) => ({
+const StyledLink = styled(RouterLink)(({ theme }) => ({
   textDecoration: 'none',
   color: theme.palette.primary.main,
   fontWeight: 600,
@@ -30,7 +33,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
   gap: theme.spacing(2),
 }));
 
-const NavLink = styled(Link)(({ theme }) => ({
+const NavLink = styled(RouterLink)(({ theme }) => ({
   textDecoration: 'none',
   color: '#666',
   padding: theme.spacing(2, 1),
@@ -86,7 +89,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <LogoContainer>
             <StyledLink to="/">
               <img src="/logo-mauritania.png" alt="Logo Mauritanie" />
-              <Typography variant="h6">
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 RGPH DataViz
               </Typography>
             </StyledLink>
@@ -94,26 +97,40 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           
           <Box sx={{ flexGrow: 1 }} />
           
-          <Box sx={{ display: 'flex' }}>
+          <Box sx={{ display: 'flex', gap: 2 }}>
             <NavLink
               to="/"
               className={location.pathname === '/' ? 'active' : ''}
             >
-              <MapIcon />
-              Carte
+              <HomeIcon sx={{ mr: 1 }} />
+              Accueil
+            </NavLink>
+            <NavLink
+              to="/tables"
+              className={location.pathname === '/tables' ? 'active' : ''}
+            >
+              <TableChartIcon sx={{ mr: 1 }} />
+              Tableaux
+            </NavLink>
+            <NavLink
+              to="/visualizations"
+              className={location.pathname === '/visualizations' ? 'active' : ''}
+            >
+              <BarChartIcon sx={{ mr: 1 }} />
+              Visualisations
             </NavLink>
             <NavLink
               to="/about"
               className={location.pathname === '/about' ? 'active' : ''}
             >
-              <InfoIcon />
+              <InfoIcon sx={{ mr: 1 }} />
               À propos
             </NavLink>
             <NavLink
               to="/contact"
               className={location.pathname === '/contact' ? 'active' : ''}
             >
-              <ContactMailIcon />
+              <ContactMailIcon sx={{ mr: 1 }} />
               Contact
             </NavLink>
           </Box>

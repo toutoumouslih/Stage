@@ -1,15 +1,15 @@
 import axios from 'axios';
-import { Region, RegionStats } from '../types/region';
+import { Region, RegionStats, RegionGeoJSON } from '../types/region';
 
 const API_BASE_URL = 'http://localhost:8000/api';
 
-export const fetchRegions = async (): Promise<GeoJSON.FeatureCollection> => {
+export const fetchRegions = async (): Promise<RegionGeoJSON> => {
     try {
         const response = await axios.get(`${API_BASE_URL}/regions/geojson/`);
         return response.data;
     } catch (error) {
         console.error('Error fetching regions:', error);
-        throw new Error('Failed to fetch regions');
+        throw error;
     }
 };
 
@@ -19,7 +19,7 @@ export const fetchRegionDetails = async (regionId: number): Promise<Region> => {
         return response.data;
     } catch (error) {
         console.error('Error fetching region details:', error);
-        throw new Error('Failed to fetch region details');
+        throw error;
     }
 };
 
@@ -29,6 +29,6 @@ export const fetchRegionStats = async (regionId: number): Promise<RegionStats> =
         return response.data;
     } catch (error) {
         console.error('Error fetching region stats:', error);
-        throw new Error('Failed to fetch region stats');
+        throw error;
     }
 };

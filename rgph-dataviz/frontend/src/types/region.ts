@@ -31,6 +31,18 @@ export interface RegionStats {
     };
 }
 
+export interface RegionGeoJSON {
+    type: string;
+    features: Array<{
+        type: string;
+        properties: Region;
+        geometry: {
+            type: string;
+            coordinates: number[][][];
+        };
+    }>;
+}
+
 export interface Region {
     id: number;
     name: string;
@@ -43,7 +55,7 @@ export interface Region {
     female_percentage: number;
     total_percentage: number;
     coordinates: number[][][];
-    center: number[];
+    center: [number, number];
     historical_population: {
         [key: string]: number;
     };
@@ -51,7 +63,7 @@ export interface Region {
         [key: string]: number;
     };
     fertility_rates: {
-        [key: string]: number;
+        [key: string]: number | null;
     };
     birth_rates: {
         [key: string]: number;
@@ -133,102 +145,102 @@ export interface Region {
 }
 
 export interface RegionDetailsData {
-  id: number;
-  name: string;
-  code: string;
-  capital: string;
-  population: number;
-  male_population: number;
-  female_population: number;
-  male_percentage: number;
-  female_percentage: number;
-  total_percentage: number;
-  coordinates: number[][][];
-  center: [number, number];
-  historical_population: {
-    [key: string]: number;
-  };
-  growth_rates: {
-    [key: string]: number;
-  };
-  fertility_rates: {
-    [key: string]: number;
-  };
-  birth_rates: {
-    [key: string]: number;
-  };
-  life_expectancy: {
-    [key: string]: number;
-  };
-  infant_mortality: {
-    [key: string]: number;
-  };
-  child_mortality: {
-    [key: string]: number;
-  };
-  mortality_rates: {
-    [key: string]: number;
-  };
-  health_insurance: {
-    urban: number;
-    rural: number;
-    nomadic: number;
-    total: number;
-  };
-  chronic_diseases: {
-    urban: number;
-    rural: number;
-    nomadic: number;
-    total: number;
-  };
-  disability_rates: {
-    male: number;
-    female: number;
-    total: number;
-  };
-  illiteracy_rates: {
-    male: number;
-    female: number;
-    total: number;
-  };
-  primary_enrollment_rates: {
-    [key: string]: {
-      male: number;
-      female: number;
-      total: number;
+    id: number;
+    name: string;
+    code: string;
+    capital: string;
+    population: number;
+    male_population: number;
+    female_population: number;
+    male_percentage: number;
+    female_percentage: number;
+    total_percentage: number;
+    coordinates: number[][][];
+    center: [number, number];
+    historical_population: {
+        [key: string]: number;
     };
-  };
-  secondary_enrollment_rates: {
-    [key: string]: {
-      male: number;
-      female: number;
-      total: number;
+    growth_rates: {
+        [key: string]: number;
     };
-  };
-  net_primary_rates: {
-    [key: string]: {
-      male: number;
-      female: number;
-      total: number;
+    fertility_rates: {
+        [key: string]: number | null;
     };
-  };
-  net_secondary_rates: {
-    [key: string]: {
-      male: number;
-      female: number;
-      total: number;
+    birth_rates: {
+        [key: string]: number;
     };
-  };
-  activity_rates: {
-    urban: number;
-    rural: number;
-    nomadic: number;
-    total: number;
-  };
-  employment_rates: {
-    urban: number;
-    rural: number;
-    nomadic: number;
-    total: number;
-  };
+    life_expectancy: {
+        [key: string]: number;
+    };
+    infant_mortality: {
+        [key: string]: number;
+    };
+    child_mortality: {
+        [key: string]: number;
+    };
+    mortality_rates: {
+        [key: string]: number;
+    };
+    health_insurance: {
+        urban: number;
+        rural: number;
+        nomadic: number;
+        total: number;
+    };
+    chronic_diseases: {
+        urban: number;
+        rural: number;
+        nomadic: number;
+        total: number;
+    };
+    disability_rates: {
+        male: number;
+        female: number;
+        total: number;
+    };
+    illiteracy_rates: {
+        male: number;
+        female: number;
+        total: number;
+    };
+    primary_enrollment_rates: {
+        [key: string]: {
+            male: number;
+            female: number;
+            total: number;
+        };
+    };
+    secondary_enrollment_rates: {
+        [key: string]: {
+            male: number;
+            female: number;
+            total: number;
+        };
+    };
+    net_primary_rates: {
+        [key: string]: {
+            male: number;
+            female: number;
+            total: number;
+        };
+    };
+    net_secondary_rates: {
+        [key: string]: {
+            male: number;
+            female: number;
+            total: number;
+        };
+    };
+    activity_rates: {
+        urban: number;
+        rural: number;
+        nomadic: number;
+        total: number;
+    };
+    employment_rates: {
+        urban: number;
+        rural: number;
+        nomadic: number;
+        total: number;
+    };
 } 

@@ -6,8 +6,11 @@ import theme from './theme';
 import Layout from './components/Layout';
 import Map from './components/Map';
 import RegionDetails from './components/RegionDetails';
+import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import DataTables from './pages/DataTables';
+import Visualizations from './pages/Visualizations';
 
 const MapPage: React.FC = () => {
     const [selectedRegionId, setSelectedRegionId] = React.useState<number | null>(null);
@@ -41,9 +44,11 @@ const App: React.FC = () => {
             <Router>
                 <Layout>
                     <Routes>
-                        <Route path="/" element={<MapPage />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/tables" element={<DataTables />} />
+                        <Route path="/visualizations" element={<Visualizations />} />
                     </Routes>
                 </Layout>
             </Router>
